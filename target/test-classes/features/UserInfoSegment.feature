@@ -10,4 +10,5 @@ Feature: Smoke Test
     Then verify user is on home page
     When user click on user icon
     And click on user info tab
+    And click on save button
     Then user info being populated

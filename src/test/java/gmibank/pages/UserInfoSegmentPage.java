@@ -36,7 +36,7 @@ public class UserInfoSegmentPage {
     public WebElement saveButton;
 
     public UserInfoSegmentPage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+   //     PageFactory.initElements(Driver.getDriver(), this);
     }
 
 }
