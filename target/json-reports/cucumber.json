@@ -3,97 +3,55 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-07T19:38:38.229Z",
-        "line": 3,
-        "name": "User can sign in",
+        "start_timestamp": "2020-11-10T02:29:09.867Z",
+        "line": 7,
+        "name": "Money Transfer",
         "description": "",
-        "id": "smoke-test;user-can-sign-in",
+        "id": "testing-money-transfer;money-transfer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9531000000,
+              "duration": 4283000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user open Gmi Bank website",
+            "line": 8,
+            "name": "user should be in the Money Transfer page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_open_Gmi_Bank_website()"
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_be_in_the_Money_Transfer_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 117000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 176000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "click on sign in tab",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_tab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 127000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enter username",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_username()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 157000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enter password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 119000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "click on sign in button",
+            "name": "User should have at least 2 accounts.",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_button()"
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_have_at_least_accounts(java.lang.Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 105000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "verify user is on home page",
+            "name": "User can select the first account as From dropdown where they receive their money from.",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.verify_user_is_on_home_page()"
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_the_first_account_as_From_dropdown_where_they_receive_their_money_from()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
@@ -101,11 +59,11 @@
               "status": "passed"
             },
             "line": 11,
-            "name": "user click on user icon",
+            "name": "User can select a balance that they want to proceed with.",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_user_icon()"
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_a_balance_that_they_want_to_proceed_with()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
@@ -113,39 +71,43 @@
               "status": "passed"
             },
             "line": 12,
-            "name": "click on user info tab",
+            "name": "User should provide a description for that transfer.",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_user_info_tab()"
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_provide_a_description_for_that_transfer()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user info being populated",
+            "name": "User can make sure transfer is done successfully validating the message  an amount of the transaction.",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_info_being_populated()"
+              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_make_sure_transfer_is_done_successfully_validating_the_message_an_amount_of_the_transaction()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@us06"
+            "name": "@us016"
+          },
+          {
+            "name": "@001"
           }
         ]
       }
     ],
-    "name": "Smoke Test",
+    "name": "Testing Money Transfer",
     "description": "",
-    "id": "smoke-test",
+    "id": "testing-money-transfer",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_006_TC_01.feature",
+    "uri": "file:src/test/resources/features/MoneyTransfer.feature",
     "tags": [
       {
-        "name": "@us06",
+        "name": "@us016",
         "type": "Tag",
         "location": {
           "line": 1,
