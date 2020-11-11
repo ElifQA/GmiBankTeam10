@@ -4,6 +4,23 @@
     "elements": [
       {
 <<<<<<< HEAD
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6182000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
+=======
+<<<<<<< HEAD
         "start_timestamp": "2020-11-11T03:00:02.654Z",
         "line": 5,
         "name": "anyone can work on",
@@ -41,11 +58,44 @@
             "name": "user click on account menu",
             "match": {
               "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
+>>>>>>> master
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:27:04.386Z",
+        "line": 32,
+        "name": "User leaves a field blank",
+        "description": "",
+        "id": "gmi-bank-registration;user-leaves-a-field-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user leaves last name as blank",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_last_name_as_blank()"
+=======
               "duration": 331000000,
               "status": "passed"
             },
@@ -145,11 +195,27 @@
             "match": {
               "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_provide_a_description_for_that_transfer()"
 >>>>>>> master
+>>>>>>> master
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user should see \"error message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"error message\"",
+                  "offset": 16
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+=======
 <<<<<<< HEAD
               "duration": 267000000,
               "status": "passed"
@@ -167,12 +233,19 @@
             "match": {
               "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_make_sure_transfer_is_done_successfully_validating_the_message_an_amount_of_the_transaction()"
 >>>>>>> master
+>>>>>>> master
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@Registration"
+          },
+          {
+            "name": "@TC004"
+=======
 <<<<<<< HEAD
             "name": "@DemoData"
           },
@@ -184,10 +257,21 @@
           {
             "name": "@001"
 >>>>>>> master
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "GMI Bank Registration",
+    "description": "",
+    "id": "gmi-bank-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Registration.feature",
+    "tags": [
+      {
+        "name": "@Registration",
+=======
 <<<<<<< HEAD
     "name": "just fake data generation",
     "description": "",
@@ -206,6 +290,7 @@
     "tags": [
       {
         "name": "@us016",
+>>>>>>> master
 >>>>>>> master
         "type": "Tag",
         "location": {

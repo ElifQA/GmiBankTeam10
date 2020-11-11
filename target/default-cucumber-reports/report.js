@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Registration.feature");
+formatter.feature({
+  "name": "GMI Bank Registration",
+=======
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
   "name": "just fake data generation",
@@ -7,10 +12,28 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Testing Money Transfer",
 >>>>>>> master
+>>>>>>> master
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
+<<<<<<< HEAD
+      "name": "@Registration"
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "user is on the page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
+=======
 <<<<<<< HEAD
       "name": "@DemoData"
 =======
@@ -78,11 +101,19 @@ formatter.step({
 formatter.match({
 <<<<<<< HEAD
   "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_tab()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "user goes to registration page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
+=======
   "name": "user enter username \"username\"",
   "keyword": "When "
 });
@@ -109,10 +140,32 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_a_balance_that_they_want_to_proceed_with()"
 >>>>>>> master
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
+<<<<<<< HEAD
+formatter.scenario({
+  "name": "User leaves a field blank",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Registration"
+    },
+    {
+      "name": "@TC004"
+    }
+  ]
+});
+formatter.step({
+  "name": "user leaves last name as blank",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_last_name_as_blank()"
+=======
 formatter.step({
 <<<<<<< HEAD
   "name": "click on sign in button",
@@ -126,16 +179,25 @@ formatter.match({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_provide_a_description_for_that_transfer()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "user should see \"error message\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+=======
   "name": "User can make sure transfer is done successfully validating the message  an amount of the transaction.",
   "keyword": "Then "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_make_sure_transfer_is_done_successfully_validating_the_message_an_amount_of_the_transaction()"
+>>>>>>> master
 >>>>>>> master
 });
 formatter.result({

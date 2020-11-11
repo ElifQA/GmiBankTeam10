@@ -12,7 +12,6 @@ import org.junit.runner.RunWith;
         glue = "gmibank/stepdefinitions",
         tags = "@login",
         dryRun = false
-
 )
 
 public class Runner {
