@@ -55,7 +55,7 @@ public class RegistrationSteps {
 
     @Given("user enters a valid username {string}")
     public void user_enters_a_valid_username(String string) {
-        us002Pages.username.sendKeys(ConfigurationReader.getProperty("username"));
+        us002Pages.username.sendKeys(ConfigurationReader.getProperty("registrationUsername"));
     }
 
     @Given("user enters a valid email {string}")
@@ -65,12 +65,12 @@ public class RegistrationSteps {
 
     @Given("user enters a valid password {string}")
     public void user_enters_a_valid_password(String string) {
-        us002Pages.firstPassword.sendKeys(ConfigurationReader.getProperty("password"));
+        us002Pages.firstPassword.sendKeys(ConfigurationReader.getProperty("registrationPassword"));
     }
 
     @Given("user enters the same password for confirmation {string}")
     public void user_enters_the_same_password_for_confirmation(String string) {
-        us002Pages.secondPassword.sendKeys(ConfigurationReader.getProperty("password"));
+        us002Pages.secondPassword.sendKeys(ConfigurationReader.getProperty("registrationPassword"));
     }
 
     @Then("user clicks on {string} button")
