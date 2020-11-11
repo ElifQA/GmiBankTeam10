@@ -142,6 +142,11 @@ public class Driver {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+    public static void waitAndClick(WebElement element, int timeout) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
+         wait.until(ExpectedConditions.elementToBeClickable(element));
+         element.click();
+    }
 
     public static WebElement waitForClickablility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
@@ -217,6 +222,8 @@ public class Driver {
         }
     }
 
+
+
     /**
      * Waits for element to be not stale
      *
@@ -260,6 +267,16 @@ public class Driver {
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
     }
+
+    public static String selectRandomTextFromDropdownAndReturn(Select select) {
+        Random random = new Random();
+        List<WebElement> weblist = select.getOptions();
+        int optionIndex = 1 + random.nextInt(weblist.size() - 1);
+        select.selectByIndex(optionIndex);
+        return select.toString();
+    }
+
+
 
     /**
      * Clicks on an element using JavaScript
@@ -341,4 +358,8 @@ public class Driver {
      *
      * @param command
      */
+    public static void executeJScommand(String command) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript(command);
+    }
 }

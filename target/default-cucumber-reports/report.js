@@ -1,21 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_006_TC_01.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "Smoke Test",
+  "name": "just fake data generation",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@us06"
+      "name": "@DemoData"
     }
   ]
 });
 formatter.scenario({
-  "name": "User can sign in",
+  "name": "anyone can work on",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@us06"
+      "name": "@DemoData"
+    },
+    {
+      "name": "@login"
     }
   ]
 });
@@ -24,7 +27,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_open_Gmi_Bank_website()"
+  "location": "gmibank.stepdefinitions.LoginSteps.user_open_Gmi_Bank_website()"
 });
 formatter.result({
   "status": "passed"
@@ -34,7 +37,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_account_menu()"
+  "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
 });
 formatter.result({
   "status": "passed"
@@ -44,27 +47,27 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_tab()"
+  "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter username",
+  "name": "user enter username \"username\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_username()"
+  "location": "gmibank.stepdefinitions.LoginSteps.user_enter_username(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter password",
+  "name": "user enter password \"password\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_password()"
+  "location": "gmibank.stepdefinitions.LoginSteps.user_enter_password(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -74,47 +77,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify user is on home page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.verify_user_is_on_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on user icon",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_user_icon()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on user info tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_user_info_tab()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user info being populated",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_info_being_populated()"
+  "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_button()"
 });
 formatter.result({
   "status": "passed"

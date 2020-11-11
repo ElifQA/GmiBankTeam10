@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.087">
-<testcase classname="Smoke Test" name="User can sign in" time="10.445">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.023">
+<testcase classname="just fake data generation" name="anyone can work on" time="16.109">
 <system-out><![CDATA[Given user open Gmi Bank website............................................passed
 When user click on account menu.............................................passed
 And click on sign in tab....................................................passed
-When user enter username....................................................passed
-And user enter password.....................................................passed
+When user enter username "username".........................................passed
+And user enter password "password"..........................................passed
 Then click on sign in button................................................passed
-Then verify user is on home page............................................passed
-When user click on user icon................................................passed
-And click on user info tab..................................................passed
-Then user info being populated..............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

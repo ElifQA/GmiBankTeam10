@@ -5,23 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class UserInfoSegmentPage {
 
-    @FindBy(xpath = "//li[@id='account-menu']/a")
-    public WebElement accountMenu;
 
-    @FindBy (xpath = "//span[contains(text(),'Sign in')]")
-    public WebElement signInLink;
-
-    @FindBy(id = "username")
-    public WebElement userName;
-
-    @FindBy(id = "password")
-    public WebElement password;
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement submitButton;
 
     @FindBy( xpath = "//img[@alt='Logo']")
     public WebElement logo;
@@ -35,7 +23,36 @@ public class UserInfoSegmentPage {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement saveButton;
 
+    @FindBy (xpath = "//input[@id='firstName']")
+    public WebElement firstname;
+
+    @FindBy (id = "lastName")
+    public WebElement lastname;
+
+    @FindBy ( id = "langKey")
+    public WebElement language;
+
+    @FindBy ( id = "email")
+    public WebElement email;
+
+    @FindBy (xpath = "//*[text()='Settings saved!']")
+    public WebElement savedMessage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public UserInfoSegmentPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
