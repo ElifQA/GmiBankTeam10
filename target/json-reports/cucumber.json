@@ -1,31 +1,22 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-11T03:00:02.654Z",
-        "line": 5,
-        "name": "anyone can work on",
+        "start_timestamp": "2020-11-11T17:52:18.223Z",
+        "line": 48,
+        "name": "There should be an option to update email id adding \"@\" sign and \".com\"",
         "description": "",
-        "id": "just-fake-data-generation;anyone-can-work-on",
-=======
-        "start_timestamp": "2020-11-10T02:29:09.867Z",
-        "line": 7,
-        "name": "Money Transfer",
-        "description": "",
-        "id": "testing-money-transfer;money-transfer",
->>>>>>> master
+        "id": "user-info-segment;there-should-be-an-option-to-update-email-id-adding-\"@\"-sign-and-\".com\"",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 11541000000,
+              "duration": 11134000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 49,
             "name": "user open Gmi Bank website",
             "match": {
               "location": "gmibank.stepdefinitions.LoginSteps.user_open_Gmi_Bank_website()"
@@ -34,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 126000000,
+              "duration": 174000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 50,
             "name": "user click on account menu",
             "match": {
               "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
@@ -46,32 +37,22 @@
           },
           {
             "result": {
-              "duration": 331000000,
+              "duration": 359000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 51,
             "name": "click on sign in tab",
             "match": {
               "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_tab()"
-=======
-              "duration": 4283000000,
-              "status": "passed"
             },
-            "line": 8,
-            "name": "user should be in the Money Transfer page",
-            "match": {
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_be_in_the_Money_Transfer_page()"
->>>>>>> master
-            },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 1011000000,
+              "duration": 764000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 52,
             "name": "user enter username \"username\"",
             "match": {
               "arguments": [
@@ -81,55 +62,15 @@
                 }
               ],
               "location": "gmibank.stepdefinitions.LoginSteps.user_enter_username(java.lang.String)"
-=======
-              "duration": 2000000,
-              "status": "passed"
             },
-            "line": 9,
-            "name": "User should have at least 2 accounts.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 26
-                }
-              ],
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_have_at_least_accounts(java.lang.Integer)"
-            },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 209000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User can select the first account as From dropdown where they receive their money from.",
-            "match": {
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_the_first_account_as_From_dropdown_where_they_receive_their_money_from()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User can select a balance that they want to proceed with.",
-            "match": {
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_a_balance_that_they_want_to_proceed_with()"
->>>>>>> master
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2699000000,
-              "status": "passed"
-            },
-<<<<<<< HEAD
-            "line": 10,
+            "line": 53,
             "name": "user enter password \"password\"",
             "match": {
               "arguments": [
@@ -139,74 +80,118 @@
                 }
               ],
               "location": "gmibank.stepdefinitions.LoginSteps.user_enter_password(java.lang.String)"
-=======
-            "line": 12,
-            "name": "User should provide a description for that transfer.",
-            "match": {
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_provide_a_description_for_that_transfer()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 267000000,
+              "duration": 202000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 54,
             "name": "click on sign in button",
             "match": {
               "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_button()"
-=======
-              "duration": 1000000,
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 188000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User can make sure transfer is done successfully validating the message  an amount of the transaction.",
+            "line": 55,
+            "name": "verify user is on home page",
             "match": {
-              "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_make_sure_transfer_is_done_successfully_validating_the_message_an_amount_of_the_transaction()"
->>>>>>> master
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.verify_user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user click on user icon",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "click on user info tab",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.click_on_user_info_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 574000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user enter email \"e.techproed@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"e.techproed@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_enter_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 263000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user click on save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "verify email address contains @ and .com",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.verify_email_address_contains_and_com()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-<<<<<<< HEAD
-            "name": "@DemoData"
+            "name": "@smokeTest"
           },
           {
-            "name": "@login"
-=======
-            "name": "@us016"
-          },
-          {
-            "name": "@001"
->>>>>>> master
+            "name": "@us06_TC04"
           }
         ]
       }
     ],
-<<<<<<< HEAD
-    "name": "just fake data generation",
+    "name": "User info Segment",
     "description": "",
-    "id": "just-fake-data-generation",
+    "id": "user-info-segment",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/UserInfoSegment.feature",
     "tags": [
       {
-        "name": "@DemoData",
-=======
-    "name": "Testing Money Transfer",
-    "description": "",
-    "id": "testing-money-transfer",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/MoneyTransfer.feature",
-    "tags": [
-      {
-        "name": "@us016",
->>>>>>> master
+        "name": "@smokeTest",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.023">
-<testcase classname="just fake data generation" name="anyone can work on" time="16.109">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.097">
+<testcase classname="User info Segment" name="There should be an option to update email id adding &quot;@&quot; sign and &quot;.com&quot;" time="14.8">
 <system-out><![CDATA[Given user open Gmi Bank website............................................passed
 When user click on account menu.............................................passed
 And click on sign in tab....................................................passed
 When user enter username "username".........................................passed
 And user enter password "password"..........................................passed
 Then click on sign in button................................................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.509">
-<testcase classname="Testing Money Transfer" name="Money Transfer" time="4.36">
-<system-out><![CDATA[Given user should be in the Money Transfer page.............................passed
-Then User should have at least 2 accounts...................................passed
-And User can select the first account as From dropdown where they receive their money from..passed
-And User can select a balance that they want to proceed with................passed
-And User should provide a description for that transfer.....................passed
-Then User can make sure transfer is done successfully validating the message  an amount of the transaction..passed
->>>>>>> master
+Then verify user is on home page............................................passed
+When user click on user icon................................................passed
+And click on user info tab..................................................passed
+And user enter email "e.techproed@gmail.com"................................passed
+And user click on save button...............................................passed
+Then verify email address contains @ and .com...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -1,82 +1,52 @@
-<<<<<<< HEAD
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/UserInfoSegment.feature");
 formatter.feature({
-  "name": "just fake data generation",
-=======
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/MoneyTransfer.feature");
-formatter.feature({
-  "name": "Testing Money Transfer",
->>>>>>> master
+  "name": "User info Segment",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-<<<<<<< HEAD
-      "name": "@DemoData"
-=======
-      "name": "@us016"
->>>>>>> master
+      "name": "@smokeTest"
     }
   ]
 });
 formatter.scenario({
-<<<<<<< HEAD
-  "name": "anyone can work on",
-=======
-  "name": "Money Transfer",
->>>>>>> master
+  "name": "There should be an option to update email id adding \"@\" sign and \".com\"",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-<<<<<<< HEAD
-      "name": "@DemoData"
+      "name": "@smokeTest"
     },
     {
-      "name": "@login"
-=======
-      "name": "@us016"
-    },
-    {
-      "name": "@001"
->>>>>>> master
+      "name": "@us06_TC04"
     }
   ]
 });
 formatter.step({
-  "name": "user should be in the Money Transfer page",
+  "name": "user open Gmi Bank website",
   "keyword": "Given "
 });
 formatter.match({
-<<<<<<< HEAD
   "location": "gmibank.stepdefinitions.LoginSteps.user_open_Gmi_Bank_website()"
-=======
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_be_in_the_Money_Transfer_page()"
->>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should have at least 2 accounts.",
-  "keyword": "Then "
+  "name": "user click on account menu",
+  "keyword": "When "
 });
 formatter.match({
-<<<<<<< HEAD
   "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
-=======
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_have_at_least_accounts(java.lang.Integer)"
->>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User can select the first account as From dropdown where they receive their money from.",
+  "name": "click on sign in tab",
   "keyword": "And "
 });
 formatter.match({
-<<<<<<< HEAD
   "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_tab()"
 });
 formatter.result({
@@ -88,55 +58,86 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.LoginSteps.user_enter_username(java.lang.String)"
-=======
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_the_first_account_as_From_dropdown_where_they_receive_their_money_from()"
->>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-<<<<<<< HEAD
   "name": "user enter password \"password\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.LoginSteps.user_enter_password(java.lang.String)"
-=======
-  "name": "User can select a balance that they want to proceed with.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_select_a_balance_that_they_want_to_proceed_with()"
->>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-<<<<<<< HEAD
   "name": "click on sign in button",
   "keyword": "Then "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.LoginSteps.click_on_sign_in_button()"
-=======
-  "name": "User should provide a description for that transfer.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_should_provide_a_description_for_that_transfer()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User can make sure transfer is done successfully validating the message  an amount of the transaction.",
+  "name": "verify user is on home page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.MoneyTransferDefinitions.user_can_make_sure_transfer_is_done_successfully_validating_the_message_an_amount_of_the_transaction()"
->>>>>>> master
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.verify_user_is_on_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on user icon",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on user info tab",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.click_on_user_info_tab()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enter email \"e.techproed@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_enter_email(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify email address contains @ and .com",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.verify_email_address_contains_and_com()"
 });
 formatter.result({
   "status": "passed"

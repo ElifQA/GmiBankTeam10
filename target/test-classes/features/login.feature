@@ -1,7 +1,8 @@
-@DemoData
+@login
 
   Feature: just fake data generation
-    @login
+
+    Background: Sing in
     Scenario: anyone can work on
       Given user open Gmi Bank website
       When user click on account menu
@@ -9,3 +10,5 @@
       When user enter username "username"
       And user enter password "password"
       Then click on sign in button
+
+
