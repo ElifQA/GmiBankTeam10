@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class UserInfoSegmentPage {
 
-
-
     @FindBy( xpath = "//img[@alt='Logo']")
     public WebElement logo;
 
@@ -38,22 +36,10 @@ public class UserInfoSegmentPage {
     @FindBy (xpath = "//*[text()='Settings saved!']")
     public WebElement savedMessage;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     public UserInfoSegmentPage(){
 
         PageFactory.initElements(Driver.getDriver(), this);
+
     }
 
 }
