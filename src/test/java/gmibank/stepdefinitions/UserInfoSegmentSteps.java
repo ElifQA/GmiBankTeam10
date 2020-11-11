@@ -7,43 +7,22 @@ import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+
+import java.util.List;
 
 public class UserInfoSegmentSteps {
-    UserInfoSegmentPage us_006Page= new UserInfoSegmentPage();
+    UserInfoSegmentPage us_006Page = new UserInfoSegmentPage();
 
-    @Given("user open Gmi Bank website")
-    public void user_open_Gmi_Bank_website() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
-    }
-    @When("user click on account menu")
-    public void user_click_on_account_menu() {
-    us_006Page.accountMenu.click();
-    }
-    @When("click on sign in tab")
-    public void click_on_sign_in_tab() {
-        us_006Page.signInLink.click();
 
-    }
-    @When("user enter username")
-    public void user_enter_username() {
-        us_006Page.userName.sendKeys("team10");
-
-    }
-    @When("user enter password")
-    public void user_enter_password() {
-        us_006Page.password.sendKeys("Team10*");
-
-    }
-    @Then("click on sign in button")
-    public void click_on_sign_in_button() {
-        us_006Page.submitButton.click();
-
-    }
     @Then("verify user is on home page")
     public void verify_user_is_on_home_page() {
-    boolean Logo=us_006Page.logo.isDisplayed();
-        System.out.println( "user is on home page"+ Logo);
+        Driver.verifyElementDisplayed(us_006Page.logo);
+
 
     }
 
@@ -55,15 +34,77 @@ public class UserInfoSegmentSteps {
 
     @When("click on user info tab")
     public void click_on_user_info_tab() {
+        Driver.waitForVisibility(us_006Page.userInfo, 10);
         us_006Page.userInfo.click();
 
     }
 
     @Then("user info being populated")
     public void user_info_being_populated() {
+
+        Driver.verifyElementDisplayed(us_006Page.firstname);
+    }
+
+    //TC-02
+    @Then("verify there should be two languages available")
+    public void verify_there_should_be_two_languages_available() {
+        Select select = new Select(us_006Page.language);
+        List<WebElement> list = select.getOptions();
+        for (WebElement List : list) {
+            String gettext = List.getText();
+            System.out.println(gettext);
+        }
+    }
+    //Driver.selectRandomTextFromDropdownAndReturn(select);
+
+
+    @Then("enter firstname {string}")
+    public void enter_firstname(String string) {
+        us_006Page.firstname.clear();
+        us_006Page.firstname.sendKeys(string);
+    }
+
+    @Then("enter lastname {string}")
+    public void enter_lastname(String string) {
+        us_006Page.lastname.clear();
+        us_006Page.lastname.sendKeys(string);
+
+    }
+
+    @Then("user click on save button")
+    public void user_click_on_save_button() {
         us_006Page.saveButton.click();
 
     }
 
+    @Then("verify updated message is displayed")
+    public void verify_updated_message_is_displayed() {
+        Driver.waitForVisibility(us_006Page.savedMessage, 2000);
+        String str = us_006Page.savedMessage.getText();
+        System.out.println(str);
+        Driver.verifyElementDisplayed(us_006Page.savedMessage);
 
+    }
+
+    //TC04
+    @When("user enter email {string}")
+    public void user_enter_email(String string) throws InterruptedException {
+        us_006Page.email.clear();
+        us_006Page.email.sendKeys(string);
+    }
+
+    @Then("verify email address contains @ and .com")
+    public void verify_email_address_contains_and_com() {
+        Driver.waitForVisibility(us_006Page.email, 2000);
+
+
+        String getValue = us_006Page.email.getAttribute("value");
+        System.out.println(getValue);
+
+        if (getValue.contains(".com")) {
+            System.out.println(getValue+" email contains @ .com");
+        }else {
+            System.out.println("email doesn't have ");
+        }
+    }
 }
