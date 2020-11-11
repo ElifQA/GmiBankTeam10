@@ -3,149 +3,96 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-07T19:38:38.229Z",
-        "line": 3,
-        "name": "User can sign in",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "smoke-test;user-can-sign-in",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9531000000,
+              "duration": 6182000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user open Gmi Bank website",
+            "line": 5,
+            "name": "user is on the page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_open_Gmi_Bank_website()"
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 117000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on account menu",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_account_menu()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 176000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "click on sign in tab",
+            "name": "user goes to registration page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_tab()"
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
             },
             "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-10T17:27:04.386Z",
+        "line": 32,
+        "name": "User leaves a field blank",
+        "description": "",
+        "id": "gmi-bank-registration;user-leaves-a-field-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user leaves last name as blank",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_last_name_as_blank()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 127000000,
+              "duration": 4000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter username",
+            "line": 34,
+            "name": "user should see \"error message\"",
             "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_username()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 157000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enter password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_enter_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 119000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "click on sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_sign_in_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 105000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "verify user is on home page",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.verify_user_is_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on user icon",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_click_on_user_icon()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "click on user info tab",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.click_on_user_info_tab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user info being populated",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_06_TC_01StepDefinitions.user_info_being_populated()"
+              "arguments": [
+                {
+                  "val": "\"error message\"",
+                  "offset": 16
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@us06"
+            "name": "@Registration"
+          },
+          {
+            "name": "@TC004"
           }
         ]
       }
     ],
-    "name": "Smoke Test",
+    "name": "GMI Bank Registration",
     "description": "",
-    "id": "smoke-test",
+    "id": "gmi-bank-registration",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_006_TC_01.feature",
+    "uri": "file:src/test/resources/features/Registration.feature",
     "tags": [
       {
-        "name": "@us06",
+        "name": "@Registration",
         "type": "Tag",
         "location": {
           "line": 1,
