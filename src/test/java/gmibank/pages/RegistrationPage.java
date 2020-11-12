@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage {
     public RegistrationPage(){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[2]/nav[1]/div[1]/ul[1]/li[8]/a[1]")
@@ -24,7 +25,7 @@ public class RegistrationPage {
     @FindBy(name = "lastname")
     public WebElement lastName;
 
-    @FindBy(name = "address")
+    @FindBy(id = "address")
     public WebElement address;
 
     @FindBy(name = "mobilephone")
@@ -52,5 +53,21 @@ public class RegistrationPage {
     public WebElement successMessage;
 
     @FindBy(xpath = "//div[contains(text(),'Your First Name is required')]")
-    public WebElement firstNameIsReqMessage;
+    public WebElement firstNameErrorMessage;
+
+    @FindBy(xpath = "//div[contains(text(),'Your Last Name is required')]")
+    public WebElement lastNameErrorMessage;
+
+    @FindBy(xpath = "//div[contains(text(),'Your username is required.')]")
+    public WebElement usernameErrorMessage;
+
+    @FindBy(xpath = "//div[contains(text(),'Your email is required.')]")
+    public WebElement emailErrorMessage;
+
+    @FindBy(xpath = "//div[contains(text(),'Your password is required.')]")
+    public WebElement newPasswordErrorMessage;
+    @FindBy(xpath = "//div[contains(text(),'Your confirmation password is required.')]")
+    public WebElement newPasswordConfirmationErrorMessage;
+
+
 }
