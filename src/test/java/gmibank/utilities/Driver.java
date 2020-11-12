@@ -4,6 +4,7 @@ package gmibank.utilities;
 import com.google.common.base.Function;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.bytebuddy.pool.TypePool;
+import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -147,6 +148,12 @@ public class Driver {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
          wait.until(ExpectedConditions.elementToBeClickable(element));
          element.click();
+    }
+    public static void waitAndSendKeys(WebElement element,String text, int timeout) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.sendKeys(""+ Keys.ENTER);
+
     }
 
     public static WebElement waitForClickablility(By locator, int timeout) {

@@ -10,8 +10,5 @@
         <module name="GmiFramework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="GmiBankTeam10" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

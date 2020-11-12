@@ -7,10 +7,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.interactions.Actions;
 
 public class RegistrationSteps {
-    RegistrationPage us002Pages=new RegistrationPage();
+    RegistrationPage us002Pages = new RegistrationPage();
+
     @Given("user is on the page")
     public void user_is_on_the_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -25,12 +27,13 @@ public class RegistrationSteps {
 
     @Given("user leaves the SSN checkbox blank")
     public void user_leaves_the_SSN_checkbox_blank() {
-        us002Pages.ssnCheckbox.sendKeys("");
+        Driver.waitAndSendKeys(us002Pages.ssnCheckbox, "ssnErrorMessage", 3);
     }
 
     @Given("user enters a valid SSN {string}")
     public void user_enters_a_valid_SSN(String string) {
         us002Pages.ssnCheckbox.sendKeys(ConfigurationReader.getProperty("ssn"));
+
     }
 
     @Given("user enters a valid first name {string}")
@@ -78,6 +81,7 @@ public class RegistrationSteps {
 
         us002Pages.registerButton.click();
     }
+
     @Then("user should see a success message")
     public void user_should_see_a_success_message() {
         Driver.scrollToElement(us002Pages.redMessage);
@@ -96,19 +100,74 @@ public class RegistrationSteps {
 
         Assert.assertEquals(us002Pages.redMessage.getText(), "translation-not-found[Your SSN is required]");
     }
+
     @Given("user leaves first name text box blank")
     public void user_leaves_firstname_textbox_blank() {
-        us002Pages.firstName.sendKeys(""+ Keys.ENTER);
+        Driver.waitAndSendKeys(us002Pages.firstName, "firstNameErrorMessage", 3);
+        Assert.assertTrue(us002Pages.firstNameErrorMessage.getText().contains("required"));
     }
 
     @Then("user should see {string}")
     public void user_should_see(String string) {
-
-        Assert.assertTrue(ConfigurationReader.getProperty("errorMessage").contains("required"));
+        Assert.assertTrue(us002Pages.firstNameErrorMessage.getText().contains("required"));
     }
+
     @Given("user leaves last name as blank")
     public void user_leaves_last_name_as_blank() {
-        us002Pages.lastName.sendKeys(""+Keys.ENTER);
+
+        Driver.waitAndSendKeys(us002Pages.lastName, "lastNameErrorMessage", 3);
+        Assert.assertTrue(us002Pages.lastNameErrorMessage.getText().contains("required"));
+    }
+
+    @Given("user leaves address as blank")
+    public void user_leaves_address_as_blank() {
+
+        Driver.waitAndSendKeys(us002Pages.address, "addressErrorMessage", 3);
+        //Assert.assertTrue(ConfigurationReader.getProperty("addressErrorMessage"));
+        try {
+            ConfigurationReader.getProperty("addressErrorMessage");
+
+        }
+        catch (NoSuchElementException e){
+
+        }
+    }
+
+    @Given("user leaves mobile phone number as blank")
+    public void user_leaves_mobile_phone_number_as_blank() {
+        Driver.waitAndSendKeys(us002Pages.mobilephone, "Your Mobile Phone Number is required", 3);
+        //Assert.assertTrue(ConfigurationReader.getProperty("mobilephoneErrorMessage").contains("required"));
+        try{
+            ConfigurationReader.getProperty("mobilephoneErrorMessage");
+
+        }
+        catch (NoSuchElementException e){
+
+        }
+    }
+
+    @Given("user leaves username as blank")
+    public void user_leaves_username_as_blank() {
+        Driver.waitAndSendKeys(us002Pages.username, "Your username is required.", 3);
+        Assert.assertTrue(us002Pages.usernameErrorMessage.getText().contains("required"));
+    }
+
+    @Given("user leaves email as blank")
+    public void user_leaves_email_as_blank() {
+        Driver.waitAndSendKeys(us002Pages.email, "Your email is required.", 2);
+        Assert.assertTrue(us002Pages.emailErrorMessage.getText().contains("required"));
+
 
     }
+    @Given("user leaves new password as blank")
+    public void user_leaves_new_password_as_blank() {
+        Driver.waitAndSendKeys(us002Pages.firstPassword,"Your password is required.",3);
+        Assert.assertTrue(us002Pages.newPasswordErrorMessage.getText().contains("required"));
+    }
+    @Given("user leaves new password confirmation as blank")
+    public void user_leaves_new_password_confirmation_as_blank() {
+        Driver.waitAndSendKeys(us002Pages.secondPassword,"Your confirmation password is required.",3);
+        Assert.assertTrue(us002Pages.newPasswordConfirmationErrorMessage.getText().contains("required"));
+    }
+
 }

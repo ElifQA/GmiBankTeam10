@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.72">
-<testcase classname="GMI Bank Registration" name="User leaves a field blank" time="6.555">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.449">
+<testcase classname="GMI Bank Registration" name="User leaves a field blank" time="7.28">
 <system-out><![CDATA[Given user is on the page...................................................passed
 And user goes to registration page..........................................passed
-Given user leaves last name as blank........................................passed
-Then user should see "error message"........................................passed
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.023">
-<testcase classname="just fake data generation" name="anyone can work on" time="16.109">
-<system-out><![CDATA[Given user open Gmi Bank website............................................passed
-When user click on account menu.............................................passed
-And click on sign in tab....................................................passed
-When user enter username "username".........................................passed
-And user enter password "password"..........................................passed
-Then click on sign in button................................................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.509">
-<testcase classname="Testing Money Transfer" name="Money Transfer" time="4.36">
-<system-out><![CDATA[Given user should be in the Money Transfer page.............................passed
-Then User should have at least 2 accounts...................................passed
-And User can select the first account as From dropdown where they receive their money from..passed
-And User can select a balance that they want to proceed with................passed
-And User should provide a description for that transfer.....................passed
-Then User can make sure transfer is done successfully validating the message  an amount of the transaction..passed
->>>>>>> master
->>>>>>> master
+Given user leaves address as blank..........................................passed
+Then user should see "addressErrorMessage"..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
