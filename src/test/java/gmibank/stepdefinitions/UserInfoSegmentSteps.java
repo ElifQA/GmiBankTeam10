@@ -104,7 +104,7 @@ public class UserInfoSegmentSteps {
         if (getValue.contains(".com")) {
             System.out.println(getValue+" email contains @ .com");
         }else {
-            System.out.println("email doesn't have ");
+            System.out.println("email doesn't have .com");
         }
     }
 }
