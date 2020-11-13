@@ -3,6 +3,7 @@ package gmibank.stepdefinitions;
 import gmibank.pages.LoginPage;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -46,5 +47,23 @@ public class LoginSteps {
 
         Driver.waitAndClick(login.submitButton, 5);
 
+    }
+//Ziya
+
+    @And("user click on accountMenu")
+    public void userClickOnAccountMenu() {
+        Driver.waitAndClick(login.accountMenu,2);
+    }
+
+
+    @And("user click on the signinLink")
+    public void userClickOnTheSigninLink() {
+        Driver.waitAndClick(login.signInLink,2);
+    }
+
+    @Then("user click on the username box and enter invalid username")
+    public void userClickOnTheUsernameBoxAndEnterInvalidUsername() throws InterruptedException {
+        Driver.waitAndSendKeys(login.userName,"ziya",2);
+        Thread.sleep(5000);
     }
 }
