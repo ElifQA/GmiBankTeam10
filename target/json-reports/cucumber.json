@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6585000000,
+              "duration": 3630000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 154000000,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-12T01:54:26.082Z",
+        "start_timestamp": "2020-11-12T23:52:56.855Z",
         "line": 37,
         "name": "User leaves a field blank",
         "description": "",
@@ -46,7 +46,7 @@
         "steps": [
           {
             "result": {
-              "duration": 348000000,
+              "duration": 281000000,
               "status": "passed"
             },
             "line": 38,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 29000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 39,
