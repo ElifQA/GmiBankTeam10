@@ -35,7 +35,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User leaves a field blank",
+  "name": "User enters an SSN with char in it",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,28 +43,29 @@ formatter.scenario({
       "name": "@Registration"
     },
     {
-      "name": "@TC005"
+      "name": "@TC0011"
     }
   ]
 });
 formatter.step({
-  "name": "user leaves address as blank",
+  "name": "user enters a SSN with char in the beginning",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_enters_a_SSN_with_char_in_the_beginning()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should see \"addressErrorMessage\"",
+  "name": "user should see \"ssnErrorMessage\" message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Your SSN is invalid]\u003e but was:\u003c[translation-not-found[Your SSN is required]]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(RegistrationSteps.java:99)\n\tat ✽.user should see \"ssnErrorMessage\" message(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:77)\n",
+  "status": "failed"
 });
 });

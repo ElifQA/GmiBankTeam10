@@ -52,6 +52,9 @@ public class RegistrationPage {
     @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")
     public WebElement successMessage;
 
+    @FindBy(xpath = "//div[contains(text(),'Your SSN is invalid')]")
+    public WebElement ssnErrorMessage;
+
     @FindBy(xpath = "//div[contains(text(),'Your First Name is required')]")
     public WebElement firstNameErrorMessage;
 
@@ -61,11 +64,12 @@ public class RegistrationPage {
     @FindBy(xpath = "//div[contains(text(),'Your username is required.')]")
     public WebElement usernameErrorMessage;
 
-    @FindBy(xpath = "//div[contains(text(),'Your email is required.')]")
+    @FindBy(xpath = "//div[contains(text(),'This field is invalid')]")
     public WebElement emailErrorMessage;
 
     @FindBy(xpath = "//div[contains(text(),'Your password is required.')]")
     public WebElement newPasswordErrorMessage;
+
     @FindBy(xpath = "//div[contains(text(),'Your confirmation password is required.')]")
     public WebElement newPasswordConfirmationErrorMessage;
 
