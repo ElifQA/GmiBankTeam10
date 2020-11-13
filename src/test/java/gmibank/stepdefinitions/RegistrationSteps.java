@@ -87,9 +87,7 @@ public class RegistrationSteps {
         Driver.scrollToElement(us002Pages.redMessage);
         Driver.scrollToElement(us002Pages.redMessage);
         Driver.wait(3);
-
         Assert.assertTrue(us002Pages.successMessage.getText().contains("saved"));
-
     }
 
     @Then("user should see {string} message")
@@ -170,4 +168,32 @@ public class RegistrationSteps {
         Assert.assertTrue(us002Pages.newPasswordConfirmationErrorMessage.getText().contains("required"));
     }
 
+    @Given("user enters a SSN with char in the beginning")
+    public void user_enters_a_SSN_with_char_in_the_beginning() {
+        us002Pages.ssnCheckbox.sendKeys("a11-33-2222"+Keys.ENTER);
+    }
+    @Then("user should see \\{string} message")
+    public void user_should_see_message() {
+    Assert.assertTrue(us002Pages.ssnErrorMessage.getText().contains("invalid"));
+    }
+    @Given("user enters a SSN with char in the middle")
+    public void user_enters_a_SSN_with_char_in_the_middle() {
+        us002Pages.ssnCheckbox.sendKeys("211-3a-2222"+Keys.ENTER);
+        Driver.waitForVisibility(us002Pages.ssnErrorMessage,5);
+        Assert.assertTrue(us002Pages.ssnErrorMessage.isDisplayed());
+    }
+    @Given("user enters a SSN with char at the end")
+    public void user_enters_a_SSN_with_char_at_the_end() {
+        us002Pages.ssnCheckbox.sendKeys("211-38-222a"+Keys.ENTER);
+    }
+    @Given("user enters a phone number with a char in the begining")
+    public void user_enters_a_phone_number_with_a_char_in_the_begining() {
+        us002Pages.mobilephone.sendKeys("Phone number: a23-234-4455"+Keys.ENTER);
+
+    }
+    @Given("user enters an email without @ sign")
+    public void user_enters_an_email_without_sign() {
+        us002Pages.email.sendKeys("lindapinegmail.com"+Keys.ENTER);
+        Assert.assertTrue(us002Pages.emailErrorMessage.isDisplayed());
+    }
 }

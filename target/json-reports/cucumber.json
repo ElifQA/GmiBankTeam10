@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6585000000,
+              "duration": 6326000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 163000000,
               "status": "passed"
             },
             "line": 6,
@@ -36,41 +36,42 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-12T01:54:26.082Z",
-        "line": 37,
-        "name": "User leaves a field blank",
+        "start_timestamp": "2020-11-12T15:22:07.083Z",
+        "line": 75,
+        "name": "User enters an SSN with char in it",
         "description": "",
-        "id": "gmi-bank-registration;user-leaves-a-field-blank",
+        "id": "gmi-bank-registration;user-enters-an-ssn-with-char-in-it",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 348000000,
+              "duration": 266000000,
               "status": "passed"
             },
-            "line": 38,
-            "name": "user leaves address as blank",
+            "line": 76,
+            "name": "user enters a SSN with char in the beginning",
             "match": {
-              "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_enters_a_SSN_with_char_in_the_beginning()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 29000000,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Your SSN is invalid]\u003e but was:\u003c[translation-not-found[Your SSN is required]]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(RegistrationSteps.java:99)\n\tat ✽.user should see \"ssnErrorMessage\" message(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:77)\n",
+              "duration": 3333000000,
+              "status": "failed"
             },
-            "line": 39,
-            "name": "user should see \"addressErrorMessage\"",
+            "line": 77,
+            "name": "user should see \"ssnErrorMessage\" message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"addressErrorMessage\"",
+                  "val": "\"ssnErrorMessage\"",
                   "offset": 16
                 }
               ],
-              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -80,7 +81,7 @@
             "name": "@Registration"
           },
           {
-            "name": "@TC005"
+            "name": "@TC0011"
           }
         ]
       }
