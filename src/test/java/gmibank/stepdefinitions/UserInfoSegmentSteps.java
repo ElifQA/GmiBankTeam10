@@ -52,10 +52,12 @@ public class UserInfoSegmentSteps {
         List<WebElement> list = select.getOptions();
         for (WebElement List : list) {
             String gettext = List.getText();
+            Assert.assertTrue(gettext.contains("English"));
+            Assert.assertTrue(gettext.contains("Türkçe"));
             System.out.println(gettext);
         }
     }
-    //Driver.selectRandomTextFromDropdownAndReturn(select);
+   // Driver.selectRandomTextFromDropdownAndReturn();
 
 
     @Then("enter firstname {string}")
@@ -80,9 +82,10 @@ public class UserInfoSegmentSteps {
     @Then("verify updated message is displayed")
     public void verify_updated_message_is_displayed() {
         Driver.waitForVisibility(us_006Page.savedMessage, 2000);
-        String str = us_006Page.savedMessage.getText();
-        System.out.println(str);
-        Driver.verifyElementDisplayed(us_006Page.savedMessage);
+       // Assert.assertTrue(us_006Page.savedMessage.getText().contains("Settings saved!"));
+        // String str = us_006Page.savedMessage.getText();
+       //System.out.println(str);
+       Driver.verifyElementDisplayed(us_006Page.savedMessage);
 
     }
 
@@ -96,15 +99,17 @@ public class UserInfoSegmentSteps {
     @Then("verify email address contains @ and .com")
     public void verify_email_address_contains_and_com() {
         Driver.waitForVisibility(us_006Page.email, 2000);
+    Assert.assertTrue(us_006Page.email.getAttribute("value").contains(".com"));
+    Assert.assertTrue(us_006Page.email.getAttribute("value").contains("@"));
 
 
-        String getValue = us_006Page.email.getAttribute("value");
-        System.out.println(getValue);
-
-        if (getValue.contains(".com")) {
-            System.out.println(getValue+" email contains @ .com");
-        }else {
-            System.out.println("email doesn't have .com");
-        }
-    }
+//        String getValue = us_006Page.email.getAttribute("value");
+//        System.out.println(getValue);
+//
+//        if (getValue.contains(".com")) {
+//            System.out.println(getValue+" email contains @ .com");
+//        }else {
+//            System.out.println("email doesn't have .com");
+//        }
+   }
 }
