@@ -35,7 +35,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User enters an SSN with char in it",
+  "name": "User leaves a field blank",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,29 +43,29 @@ formatter.scenario({
       "name": "@Registration"
     },
     {
-      "name": "@TC0011"
+      "name": "@TC005"
     }
   ]
 });
 formatter.step({
-  "name": "user enters a SSN with char in the beginning",
+  "name": "user leaves address as blank",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_enters_a_SSN_with_char_in_the_beginning()"
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)\n\tat ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "user should see \"ssnErrorMessage\" message",
+  "name": "user should see \"addressErrorMessage\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(java.lang.String)"
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Your SSN is invalid]\u003e but was:\u003c[translation-not-found[Your SSN is required]]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(RegistrationSteps.java:99)\n\tat ✽.user should see \"ssnErrorMessage\" message(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:77)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 });

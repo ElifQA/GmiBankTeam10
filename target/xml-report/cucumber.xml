@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.38">
-<testcase classname="GMI Bank Registration" name="User enters an SSN with char in it" time="10.199">
-<failure message="expected:&lt;[Your SSN is invalid]&gt; but was:&lt;[translation-not-found[Your SSN is required]]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on the page...................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.189">
+<testcase classname="GMI Bank Registration" name="User leaves a field blank" time="22.003">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the page...................................................passed
 And user goes to registration page..........................................passed
-Given user enters a SSN with char in the beginning..........................passed
-Then user should see "ssnErrorMessage" message..............................failed
+Given user leaves address as blank..........................................failed
+Then user should see "addressErrorMessage"..................................skipped
 
 StackTrace:
-org.junit.ComparisonFailure: expected:<[Your SSN is invalid]> but was:<[translation-not-found[Your SSN is required]]]]><![CDATA[>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at gmibank.stepdefinitions.RegistrationSteps.user_should_see_message(RegistrationSteps.java:99)
-	at ✽.user should see "ssnErrorMessage" message(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:77)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)
+	at ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)
 ]]></failure>
 </testcase>
 </testsuite>
