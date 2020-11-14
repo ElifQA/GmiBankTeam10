@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Registration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CustomerManagment.feature");
 formatter.feature({
-  "name": "GMI Bank Registration",
+  "name": "Customer Managment Address Creation",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Registration"
+      "name": "@US0010"
     }
   ]
 });
 formatter.background({
-  "name": "",
+  "name": "New customer creation",
   "description": "",
   "keyword": "Background"
 });
@@ -22,50 +22,89 @@ formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user goes to registration page",
+  "name": "user click on user icon",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
+  "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on account menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on sign in",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters \"employeeUsername\" and \"employeePassword\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on \"SignInLink\" button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationSteps.user_clicks_on_button(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on My Operations link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on Manage Customers link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "User leaves a field blank",
+  "name": "Create a New Customer",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Registration"
+      "name": "@US0010"
     },
     {
-      "name": "@TC005"
+      "name": "@TC01"
     }
   ]
 });
 formatter.step({
-  "name": "user leaves address as blank",
-  "keyword": "Given "
+  "name": "user clicks on Create a new customer link",
+  "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)\n\tat ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "user should see \"addressErrorMessage\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 });

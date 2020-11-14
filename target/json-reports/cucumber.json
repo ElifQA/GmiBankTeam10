@@ -3,18 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
+        "line": 3,
+        "name": "New customer creation",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 11314000000,
-              "status": "passed"
+              "duration": 2000000,
+              "status": "skipped"
             },
-            "line": 5,
+            "line": 4,
             "name": "user is on the page",
             "match": {
               "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
@@ -23,77 +23,121 @@
           },
           {
             "result": {
-              "duration": 180000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "user goes to registration page",
+            "line": 5,
+            "name": "user click on user icon",
             "match": {
-              "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-14T19:52:12.626Z",
-        "line": 41,
-        "name": "User leaves a field blank",
-        "description": "",
-        "id": "gmi-bank-registration;user-leaves-a-field-blank",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)\n\tat ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)\n",
-              "duration": 10412000000,
-              "status": "failed"
-            },
-            "line": 42,
-            "name": "user leaves address as blank",
-            "match": {
-              "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 43,
-            "name": "user should see \"addressErrorMessage\"",
+            "line": 6,
+            "name": "user click on account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user click on sign in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user enters \"employeeUsername\" and \"employeePassword\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on \"SignInLink\" button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"addressErrorMessage\"",
-                  "offset": 16
+                  "val": "\"SignInLink\"",
+                  "offset": 15
                 }
               ],
-              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_clicks_on_button(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks on My Operations link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks on Manage Customers link",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T23:37:53.316Z",
+        "line": 14,
+        "name": "Create a New Customer",
+        "description": "",
+        "id": "customer-managment-address-creation;create-a-new-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user clicks on Create a new customer link",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@Registration"
+            "name": "@US0010"
           },
           {
-            "name": "@TC005"
+            "name": "@TC01"
           }
         ]
       }
     ],
-    "name": "GMI Bank Registration",
+    "name": "Customer Managment Address Creation",
     "description": "",
-    "id": "gmi-bank-registration",
+    "id": "customer-managment-address-creation",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Registration.feature",
+    "uri": "file:src/test/resources/features/CustomerManagment.feature",
     "tags": [
       {
-        "name": "@Registration",
+        "name": "@US0010",
         "type": "Tag",
         "location": {
           "line": 1,
