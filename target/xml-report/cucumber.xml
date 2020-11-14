@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.189">
+<testcase classname="GMI Bank Registration" name="User leaves a field blank" time="22.003">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the page...................................................passed
+And user goes to registration page..........................................passed
+Given user leaves address as blank..........................................failed
+Then user should see "addressErrorMessage"..................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)
+	at ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)
+]]></failure>
+</testcase>
+</testsuite>

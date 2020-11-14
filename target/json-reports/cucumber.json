@@ -1,0 +1,105 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11314000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to registration page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_goes_to_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T19:52:12.626Z",
+        "line": 41,
+        "name": "User leaves a field blank",
+        "description": "",
+        "id": "gmi-bank-registration;user-leaves-a-field-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank(RegistrationSteps.java:131)\n\tat ✽.user leaves address as blank(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/Registration.feature:42)\n",
+              "duration": 10412000000,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "user leaves address as blank",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_leaves_address_as_blank()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "user should see \"addressErrorMessage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addressErrorMessage\"",
+                  "offset": 16
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_should_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration"
+          },
+          {
+            "name": "@TC005"
+          }
+        ]
+      }
+    ],
+    "name": "GMI Bank Registration",
+    "description": "",
+    "id": "gmi-bank-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Registration.feature",
+    "tags": [
+      {
+        "name": "@Registration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
