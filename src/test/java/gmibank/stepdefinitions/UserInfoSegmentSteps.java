@@ -17,8 +17,6 @@ import java.util.List;
 public class UserInfoSegmentSteps {
     UserInfoSegmentPage us_006Page = new UserInfoSegmentPage();
 
-
-
     @Then("verify user is on home page")
     public void verify_user_is_on_home_page() {
         Driver.verifyElementDisplayed(us_006Page.logo);
@@ -50,26 +48,35 @@ public class UserInfoSegmentSteps {
     public void verify_there_should_be_two_languages_available() {
         Select select = new Select(us_006Page.language);
         List<WebElement> list = select.getOptions();
+        boolean flagEnglish= false;
+        boolean flagTurkce= false;
         for (WebElement List : list) {
             String gettext = List.getText();
-            Assert.assertTrue(gettext.contains("English"));
-            Assert.assertTrue(gettext.contains("Türkçe"));
-            System.out.println(gettext);
+            if(gettext.contains("English")){
+                flagEnglish= true;
+            }
+            if(gettext.contains("Türkçe")){
+                flagTurkce=true;
+            }
+        }
+        if(flagEnglish && flagTurkce){
+            Assert.assertTrue(true);
+        }else{
+            Assert.assertTrue(false);
         }
     }
-   // Driver.selectRandomTextFromDropdownAndReturn();
 
 
     @Then("enter firstname {string}")
     public void enter_firstname(String string) {
         us_006Page.firstname.clear();
-        us_006Page.firstname.sendKeys(string);
+        us_006Page.firstname.sendKeys(ConfigurationReader.getProperty("US_06Firstname"));
     }
 
     @Then("enter lastname {string}")
     public void enter_lastname(String string) {
         us_006Page.lastname.clear();
-        us_006Page.lastname.sendKeys(string);
+        us_006Page.lastname.sendKeys(ConfigurationReader.getProperty("US_06Lastname"));
 
     }
 
@@ -103,13 +110,5 @@ public class UserInfoSegmentSteps {
     Assert.assertTrue(us_006Page.email.getAttribute("value").contains("@"));
 
 
-//        String getValue = us_006Page.email.getAttribute("value");
-//        System.out.println(getValue);
-//
-//        if (getValue.contains(".com")) {
-//            System.out.println(getValue+" email contains @ .com");
-//        }else {
-//            System.out.println("email doesn't have .com");
-//        }
    }
 }
