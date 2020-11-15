@@ -1,0 +1,149 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "New customer creation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user is on the page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click on user icon",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user click on sign in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user enters \"employeeUsername\" and \"employeePassword\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on \"SignInLink\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SignInLink\"",
+                  "offset": 15
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_clicks_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks on My Operations link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks on Manage Customers link",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T23:37:53.316Z",
+        "line": 14,
+        "name": "Create a New Customer",
+        "description": "",
+        "id": "customer-managment-address-creation;create-a-new-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user clicks on Create a new customer link",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0010"
+          },
+          {
+            "name": "@TC01"
+          }
+        ]
+      }
+    ],
+    "name": "Customer Managment Address Creation",
+    "description": "",
+    "id": "customer-managment-address-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CustomerManagment.feature",
+    "tags": [
+      {
+        "name": "@US0010",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

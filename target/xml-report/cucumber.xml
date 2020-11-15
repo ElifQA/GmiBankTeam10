@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.427">
+<testcase classname="Customer Managment Address Creation" name="Create a New Customer" time="0.103">
+<skipped><![CDATA[Given user is on the page...................................................skipped
+And user click on user icon.................................................skipped
+And user click on account menu..............................................skipped
+And user click on sign in...................................................undefined
+And user enters "employeeUsername" and "employeePassword"...................undefined
+And user clicks on "SignInLink" button......................................skipped
+And user clicks on My Operations link.......................................undefined
+And user clicks on Manage Customers link....................................undefined
+And user clicks on Create a new customer link...............................undefined
+]]></skipped>
+</testcase>
+</testsuite>
