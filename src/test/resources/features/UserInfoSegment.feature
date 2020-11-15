@@ -27,8 +27,8 @@ Scenario: There should be an option to update firstname and lastname
 
   When user click on user icon
   And click on user info tab
-  Then enter firstname "eda"
-  And enter lastname "dteam10"
+  Then enter firstname "firstname"
+  And enter lastname "lastname"
   And user click on save button
   Then verify updated message is displayed
 
