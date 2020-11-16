@@ -6,6 +6,7 @@ import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.interactions.Actions;
@@ -123,24 +124,22 @@ public class RegistrationSteps {
         Driver.waitAndSendKeys(us002Pages.address, "addressErrorMessage", 3);
         //Assert.assertTrue(ConfigurationReader.getProperty("addressErrorMessage"));
         try {
-            ConfigurationReader.getProperty("addressErrorMessage");
+            us002Pages.address.findElement(By.partialLinkText("Your Address is required"));
 
         }
         catch (NoSuchElementException e){
-
+            Assert.assertFalse(ConfigurationReader.getProperty("addressErrorMessage").contains("required"));
         }
     }
 
     @Given("user leaves mobile phone number as blank")
     public void user_leaves_mobile_phone_number_as_blank() {
-        Driver.waitAndSendKeys(us002Pages.mobilephone, "Your Mobile Phone Number is required", 3);
-        //Assert.assertTrue(ConfigurationReader.getProperty("mobilephoneErrorMessage").contains("required"));
         try{
-            ConfigurationReader.getProperty("mobilephoneErrorMessage");
+            us002Pages.mobilephone.findElement(By.partialLinkText("Your Mobile Phone Number is required"));
 
         }
         catch (NoSuchElementException e){
-
+            Assert.assertFalse(ConfigurationReader.getProperty("mobilephoneErrorMessage").contains("required"));
         }
     }
 
