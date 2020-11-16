@@ -3,6 +3,7 @@ package gmibank.utilities;
 import com.google.common.base.Function;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
+import org.junit.Before;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,6 +26,11 @@ public class Driver {
 
     private Driver(){ }
     static WebDriver driver;
+
+    @Before
+    public void setUp() throws Exception {
+
+    }
 
     public static WebDriver getDriver(){
         if(driver == null){

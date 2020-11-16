@@ -3,42 +3,252 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-05T01:03:52.076Z",
-        "line": 3,
-        "name": "TC02_kullanici database baglantini kontrol eder",
+        "start_timestamp": "2020-11-15T18:37:21.101Z",
+        "line": 4,
+        "name": "TC008_user Try To Change his pasword Password",
         "description": "",
-        "id": "database-test;tc02-kullanici-database-baglantini-kontrol-eder",
+        "id": "register-try-to-change-password;tc008-user-try-to-change-his-pasword-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11851000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 4,
-            "name": "kullanici veritabanina baglanir",
-            "match": {
-              "location": "gmibank.stepdefinitions.DBStepDefinitions.kullanici_veritabanina_baglanir()"
-            },
+            "line": 5,
+            "name": "I as a user navigate to GMI bank webPage",
+            "match": {},
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I as a user click to login sign",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I as a user choose signin from dropdown menu",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I as a user enter my UserName and Password in to opened frame",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I click sign in button and sign in",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I click on My username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I choose password from dropdown menu",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I enter my current password",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I enter valid password as new password",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I enter same valid pasword for confirmation",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I click save button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I observe pop up as \"Password changed!\"",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@db"
+            "name": "@us008tc001"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T18:37:21.193Z",
+        "line": 24,
+        "name": "invalid password and message validation",
+        "description": "",
+        "id": "register-try-to-change-password;invalid-password-and-message-validation;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I enter \"kadır\" in New Password and confirmation box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I see \"Password not changed!\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us008tc001"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T18:37:21.198Z",
+        "line": 25,
+        "name": "invalid password and message validation",
+        "description": "",
+        "id": "register-try-to-change-password;invalid-password-and-message-validation;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I enter \"Kadir\" in New Password and confirmation box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I see \"Password not changed!\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us008tc001"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T18:37:21.207Z",
+        "line": 26,
+        "name": "invalid password and message validation",
+        "description": "",
+        "id": "register-try-to-change-password;invalid-password-and-message-validation;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I enter \"Kadir123\" in New Password and confirmation box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I see \"Password not changed!\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us008tc001"
+          },
+          {
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "DataBase Test",
+    "name": "Register Try To Change Password",
     "description": "",
-    "id": "database-test",
+    "id": "register-try-to-change-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/db.feature",
+    "uri": "file:src/test/resources/features/us008_tc.feature",
     "tags": [
       {
-        "name": "@db",
+        "name": "@us008tc001",
         "type": "Tag",
         "location": {
           "line": 1,
