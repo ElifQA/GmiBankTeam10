@@ -14,15 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639fe8f3-6874-422d-9d9c-4d9ff3333e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/UserAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/UserAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/pages/CustomerManagmentPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/runners/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/stepdefinitions/CustomerManagmentSteps.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
