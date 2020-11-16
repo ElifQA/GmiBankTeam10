@@ -3,6 +3,7 @@ package gmibank.stepdefinitions;
 import gmibank.pages.LoginPage;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -40,11 +41,34 @@ public class LoginSteps {
         login.password.sendKeys(ConfigurationReader.getProperty("password"));
 
     }
+    @When("user enter username {string}, and password {string}")
+    public void user_enter_username_and_password(String userName, String Password) {
+        //login.userName.sendKeys(ConfigurationReader.getProperty("US_15Username"));
+        login.userName.sendKeys(userName);
+        login.password.sendKeys(Password);
+    }
 
     @Then("click on sign in button")
     public void click_on_sign_in_button() {
-
         Driver.waitAndClick(login.submitButton, 5);
 
     }
+//Ziya
+
+//    @And("user click on accountMenu")
+//    public void userClickOnAccountMenu() {
+//        Driver.waitAndClick(login.accountMenu,2);
+//    }
+//
+//
+//    @And("user click on the signinLink")
+//    public void userClickOnTheSigninLink() {
+//        Driver.waitAndClick(login.signInLink,2);
+//    }
+//
+//    @Then("user click on the username box and enter invalid username")
+//    public void userClickOnTheUsernameBoxAndEnterInvalidUsername() throws InterruptedException {
+//        Driver.waitAndSendKeys(login.userName,"ziya",2);
+//        Thread.sleep(5000);
+//    }
 }
