@@ -10,6 +10,11 @@ public class CustomerManagmentPage {
     public CustomerManagmentPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+    @FindBy(xpath = "//span[contains(text(),'My Operations')]")
+    public WebElement myOperationsLink;
+
+    @FindBy(xpath = "//span[contains(text(),'Manage Customers')]")
+    public WebElement manageCustomersLink;
 
     @FindBy(partialLinkText = "Create a new Customer")
     public WebElement createANewCustomerButton;
