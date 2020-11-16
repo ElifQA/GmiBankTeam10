@@ -11,11 +11,11 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
-        glue = "gmibank/stepdefinitions",
-        tags = "@US0010",
+        glue = "GmiBankTeam10/src/test/java/gmibank/stepdefinitions",
+        tags = "@TC002",
         dryRun = false
-
 )
 
 public class Runner {
+
 }
