@@ -13,13 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
-    
- 
     <list default="true" id="639fe8f3-6874-422d-9d9c-4d9ff3333e7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/CustomerManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/CustomerManagementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/CustomerManagmentPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagmentSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagementSteps.java" afterDir="false" />
     </list>
- 
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +46,11 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1kD4DqMiz5mOEngJcfubaw0gDUs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,10 +69,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-
   <component name="RunManager" selected="JUnit.Runner">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
@@ -100,7 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
     <configuration name="Scenario: User leaves a field blank" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Registration.feature" />
@@ -110,7 +111,6 @@
       <option name="NAME_FILTER" value="^User leaves a field blank$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User leaves a field blank$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User leaves a field blank" />
-
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
     <configuration name="Scenario: User registers to the bank account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginZiya.feature" />
@@ -132,7 +131,6 @@
       <option name="NAME_FILTER" value="^User registers to the bank account$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User registers to the bank account$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User registers to the bank account" />
-
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -144,19 +142,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-
     <configuration name="Scenario: verify user account being populated" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UserAccount_US15.feature" />
       <option name="GLUE" value="gmibank.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GmiFramework" />
-
       <option name="NAME_FILTER" value="^verify user account being populated$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify user account being populated$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: verify user account being populated" />
-
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -192,7 +186,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
-
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +227,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="last update before demo" />
@@ -250,33 +242,37 @@
     </state>
     <state x="235" y="74" key="#Runner/0.23.1440.831@0.23.1440.831" timestamp="1605533437555" />
     <state x="235" y="74" key="#Runner/0.23.1440.832@0.23.1440.832" timestamp="1605540935200" />
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1605552910972">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom" timestamp="1605634124324">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1605236463899" />
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1605634124324" />
     <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1605552910972" />
-    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1605552910970">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state width="1398" height="176" key="GridCell.Tab.0.center" timestamp="1605634124322">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1605232849860" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
+    <state width="1398" height="176" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1605634124322" />
     <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1605552910970" />
-    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1605552910968">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state width="1398" height="176" key="GridCell.Tab.0.left" timestamp="1605634124321">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1605232849859" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1605236463897" />
+    <state width="1398" height="176" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1605634124321" />
     <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1605552910968" />
-    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1605552910971">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state width="1398" height="176" key="GridCell.Tab.0.right" timestamp="1605634124323">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
+    <state width="1398" height="176" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1605634124323" />
     <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1605552910971" />
     <state x="208" y="23" width="1024" height="832" key="SettingsEditor" timestamp="1605553326567">
       <screen x="0" y="23" width="1440" height="831" />
