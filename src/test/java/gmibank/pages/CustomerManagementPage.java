@@ -16,6 +16,26 @@ public class CustomerManagementPage {
     @FindBy(xpath = "//span[contains(text(),'User management')]")
     public WebElement userManagement;
 
+    @FindBy(xpath = "//span[contains(text(),'My Operations')]")
+    public WebElement myOperationsLink;
+
+    @FindBy(xpath = "//span[contains(text(),'Manage Customers')]")
+    public WebElement manageCustomersLink;
+
+    @FindBy(partialLinkText = "Create a new Customer")
+    public WebElement createANewCustomerButton;
+
+    @FindBy(name = "address")
+    public WebElement addressTextBox;
+
+    @FindBy(name = "city")
+    public WebElement cityTextBox;
+
+    @FindBy(name = "country.id")
+    public WebElement countryTextBox;
+
+    @FindBy(name = "state")
+    public WebElement stateTextBox;
 
 
 

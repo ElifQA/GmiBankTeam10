@@ -1,14 +1,14 @@
 package gmibank.stepdefinitions;
 
-import gmibank.pages.CustomerManagmentPage;
+import gmibank.pages.CustomerManagementPage;
 import gmibank.pages.LoginPage;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
 
-public class CustomerManagmentSteps {
+public class CustomerManagementSteps {
 
-    CustomerManagmentPage customerManagmentPage=new CustomerManagmentPage();
+    CustomerManagementPage customerManagmentPage=new CustomerManagementPage();
     LoginPage loginPage=new LoginPage();
 
     @Given("user click on sign in")
