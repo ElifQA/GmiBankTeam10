@@ -14,28 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639fe8f3-6874-422d-9d9c-4d9ff3333e7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/MoneyTransferSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/MoneyTransferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/MoneyTransferPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/UserAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/UserAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/MoneyTransferDefinitions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/UserAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/UserAccountSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UserAccount_US15.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UserAccount_US15.feature" afterDir="false" />
-
-    <list default="true" id="0e66068f-9978-4a58-bda9-04d9a9d38361" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/RegistrationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/RegistrationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank/runners/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/stepdefinitions/RegistrationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank/stepdefinitions/RegistrationSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
 
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,12 +35,18 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1kD4DqMiz5mOEngJcfubaw0gDUs" />
@@ -72,13 +56,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+
   </component>
   <component name="RunManager" selected="JUnit.Runner">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -87,7 +70,9 @@
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,16 +157,22 @@
       </method>
     </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GmiFramework" />
+      <module name="GmiBankTeam10" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gmibank.runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="gmibank.runners" />
       <option name="MAIN_CLASS_NAME" value="gmibank.runners.Runner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,6 +200,14 @@
       <updated>1605221711954</updated>
       <workItem from="1605221713407" duration="6468000" />
     </task>
+    <task id="LOCAL-00001" summary="last update before demo">
+      <created>1605558264944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605558264944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,59 +226,47 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last update before demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="last update before demo" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="53" key="#Plugins" timestamp="1605421323080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1605421323080" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1605547721363">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605547721363" />
-    <state x="549" y="277" width="437" height="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605752029602">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="277" width="437" height="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605752029602" />
-    <state x="557" y="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605752642383">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="557" y="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1605752642383" />
-    <state width="1493" height="322" key="GridCell.Tab.0.bottom" timestamp="1605752310792">
-      <screen x="0" y="0" width="1536" height="824" />
+
     </state>
     <state width="1493" height="322" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1605236463899" />
-    <state width="1493" height="322" key="GridCell.Tab.0.center" timestamp="1605752310792">
-      <screen x="0" y="0" width="1536" height="824" />
+
     </state>
     <state width="1493" height="322" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1605232849860" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
-    <state width="1493" height="322" key="GridCell.Tab.0.left" timestamp="1605752310792">
-      <screen x="0" y="0" width="1536" height="824" />
+
+    <state width="1398" height="77" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1605745163214" />
+    <state width="1398" height="55" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1605743935546" />
+    <state width="1398" height="77" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1605745292439" />
+    <state width="1398" height="459" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1605748138986" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1605744434182" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1605744544187" />
+    <state width="1398" height="459" key="GridCell.Tab.0.left" timestamp="1605748138985">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state width="1493" height="322" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1605232849859" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1605236463897" />
-    <state width="1493" height="322" key="GridCell.Tab.0.right" timestamp="1605752310792">
-      <screen x="0" y="0" width="1536" height="824" />
+
     </state>
     <state width="1493" height="322" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
-    <state x="222" y="0" key="SettingsEditor" timestamp="1605547605131">
-      <screen x="0" y="0" width="1536" height="824" />
+
     </state>
     <state x="222" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605547605131" />
     <state x="208" y="23" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1605223540018" />
-    <state x="521" y="123" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605752517248">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="521" y="123" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1605752517248" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605725500156">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605725500156" />
+
   </component>
 </project>

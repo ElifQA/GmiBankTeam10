@@ -1,6 +1,7 @@
 package gmibank.pages;
 
-import gmibank.utilities.Driver;
+
+import gmibank.utilities.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,7 +28,5 @@ public class UserAccountPage {
 
     @FindBy (xpath = "//td[contains(text(),'Transfer')]")
     public WebElement transfer;
-
-
 
 }
