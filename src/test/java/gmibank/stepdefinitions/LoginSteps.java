@@ -41,12 +41,7 @@ public class LoginSteps {
         login.password.sendKeys(ConfigurationReader.getProperty("password"));
 
     }
-    @When("user enter username {string}, and password {string}")
-    public void user_enter_username_and_password(String userName, String Password) {
-        //login.userName.sendKeys(ConfigurationReader.getProperty("US_15Username"));
-        login.userName.sendKeys(userName);
-        login.password.sendKeys(Password);
-    }
+
 
     @Then("click on sign in button")
     public void click_on_sign_in_button() {
