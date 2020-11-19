@@ -7,7 +7,7 @@ Feature: Customer Managment Address Creation
     And user click on sign in
     And user enters "username" and "password"
     And user clicks on "SignInLink" button
-    And user clicks on My Operations link
+    And user click on My Operations dropdown menu
     And user clicks on Manage Customers link
 
     @TC01

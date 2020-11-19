@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CustomerManagementPage {
     public CustomerManagementPage ( ){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

@@ -18,6 +18,7 @@ public class CustomerManagemenStepdefs {
 
     @Then("user click on User Managment section")
     public void userClickOnUserManagmentSection() {
+
         Driver.waitAndClick(customerManagement.userManagement,3);
     }
 }

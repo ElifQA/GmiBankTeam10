@@ -26,17 +26,18 @@ public class CustomerManagementSteps {
 
     @Given("user clicks on My Operations link")
     public void user_clicks_on_My_Operations_link() {
-    Driver.waitAndClick(customerManagmentPage.myOperationsLink,5);
+        customerManagmentPage.myOperationsLink.click();
 
     }
 
     @Given("user clicks on Manage Customers link")
     public void user_clicks_on_Manage_Customers_link() {
-    Driver.waitAndClick(customerManagmentPage.manageCustomersLink,3);
+        customerManagmentPage.manageCustomersLink.click();
     }
 
     @Given("user clicks on Create a new customer link")
     public void user_clicks_on_Create_a_new_customer_link() {
-    customerManagmentPage.createANewCustomerButton.click();
+
+        customerManagmentPage.createANewCustomerButton.click();
     }
 }
