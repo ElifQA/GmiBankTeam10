@@ -1,6 +1,8 @@
 package gmibank.stepdefinitions;
 
+import gmibank.pages.LoginPage;
 import gmibank.pages.UserAccountPage;
+import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -9,10 +11,17 @@ import org.junit.Assert;
 
 public class UserAccountSteps {
     UserAccountPage userAccountPage= new UserAccountPage();
+   LoginPage login=new LoginPage();
+
+   @When("user enter username {string}, and password {string}")
+    public void user_enter_username_and_password(String userName, String Password) {
+        login.userName.sendKeys(ConfigurationReader.getProperty("US_15Username"));
+        login.password.sendKeys(ConfigurationReader.getProperty("US_15Password"));
+
+    }
 
 
-
-        @When("user click on My Operations dropdown menu")
+        @And("user click on My Operations dropdown menu")
     public void user_click_on_My_Operations_dropdown_menu() {
         userAccountPage.myOperations.click();
     }
@@ -33,7 +42,8 @@ public class UserAccountSteps {
     }
     @And("user click on view transaction button")
     public void userClickOnViewTransactionButton() {
-            userAccountPage.viewTransactionButton.click();
+            Driver.waitAndClick(userAccountPage.viewTransactionButton,5);
+            //userAccountPage.viewTransactionButton.click();
     }
 
     @Then("user can see transaction")

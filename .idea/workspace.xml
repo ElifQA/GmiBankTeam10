@@ -14,19 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639fe8f3-6874-422d-9d9c-4d9ff3333e7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/UsersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/UsersSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Users.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/CustomerManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/CustomerManagementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagemenStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagemenStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagementSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/CustomerManagementSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/utilities/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CustomerManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CustomerManagment.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CustomerManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CustomerManagment.feature" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +40,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -73,10 +61,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+
   </component>
   <component name="RunManager" selected="JUnit.Runner">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -92,14 +77,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: UserAccount_US15" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: MoneyTransfer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UserAccount_US15.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" />
       <option name="GLUE" value="gmibank.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GmiFramework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: UserAccount_US15" />
+      <option name="SUGGESTED_NAME" value="Feature: MoneyTransfer" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -111,15 +96,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User leaves a field blank" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: There should be an option to update firstname and lastname" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Registration.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UserInfoSegment.feature" />
       <option name="GLUE" value="gmibank.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GmiFramework" />
-      <option name="NAME_FILTER" value="^User leaves a field blank$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User leaves a field blank$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User leaves a field blank" />
+      <option name="NAME_FILTER" value="^There should be an option to update firstname and lastname$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^There should be an option to update firstname and lastname$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: There should be an option to update firstname and lastname" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -131,15 +116,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User registers to the bank account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user can select their account from dropdown" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginZiya.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" />
       <option name="GLUE" value="gmibank.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GmiFramework" />
-      <option name="NAME_FILTER" value="^User registers to the bank account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User registers to the bank account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User registers to the bank account" />
+      <option name="NAME_FILTER" value="^user can select their account from dropdown$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user can select their account from dropdown$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user can select their account from dropdown" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -151,15 +136,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: verify user account being populated" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user should have at least two accounts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UserAccount_US15.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" />
       <option name="GLUE" value="gmibank.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GmiFramework" />
-      <option name="NAME_FILTER" value="^verify user account being populated$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify user account being populated$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: verify user account being populated" />
+      <option name="NAME_FILTER" value="^user should have at least two accounts$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user should have at least two accounts$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user should have at least two accounts" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -195,6 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: user should have at least two accounts" />
+        <item itemvalue="Cucumber Java.Scenario: user can select their account from dropdown" />
+        <item itemvalue="Cucumber Java.Feature: MoneyTransfer" />
+        <item itemvalue="Cucumber Java.Scenario: There should be an option to update firstname and lastname" />
       </list>
     </recent_temporary>
   </component>
@@ -246,29 +235,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1605421323080" />
-    <state x="235" y="74" key="#Runner" timestamp="1605540935200">
-      <screen x="0" y="23" width="1440" height="832" />
+
     </state>
-    <state x="235" y="74" key="#Runner/0.23.1440.831@0.23.1440.831" timestamp="1605533437555" />
-    <state x="235" y="74" key="#Runner/0.23.1440.832@0.23.1440.832" timestamp="1605540935200" />
-    <state width="1398" height="459" key="GridCell.Tab.0.bottom" timestamp="1605748138988">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
+    <state width="1493" height="322" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1605236463899" />
-    <state width="1398" height="77" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1605745163215" />
-    <state width="1398" height="55" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1605743935547" />
-    <state width="1398" height="77" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1605745292440" />
-    <state width="1398" height="459" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1605748138988" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1605744434184" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1605744544187" />
-    <state width="1398" height="459" key="GridCell.Tab.0.center" timestamp="1605748138986">
-      <screen x="0" y="23" width="1440" height="832" />
+
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
+    <state width="1493" height="322" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1605232849860" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
+
     <state width="1398" height="77" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1605745163214" />
     <state width="1398" height="55" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1605743935546" />
     <state width="1398" height="77" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1605745292439" />
@@ -278,50 +255,18 @@
     <state width="1398" height="459" key="GridCell.Tab.0.left" timestamp="1605748138985">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
+    <state width="1493" height="322" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1605232849859" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1605236463897" />
-    <state width="1398" height="77" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1605745163214" />
-    <state width="1398" height="55" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1605743935545" />
-    <state width="1398" height="77" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1605745292438" />
-    <state width="1398" height="459" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1605748138985" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1605744434182" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1605744544186" />
-    <state width="1398" height="459" key="GridCell.Tab.0.right" timestamp="1605748138987">
-      <screen x="0" y="23" width="1440" height="832" />
+
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605426136488" />
+    <state width="1493" height="322" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605752310792" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1605232849861" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1605236463898" />
-    <state width="1398" height="77" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1605745163214" />
-    <state width="1398" height="55" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1605743935546" />
-    <state width="1398" height="77" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1605745292439" />
-    <state width="1398" height="459" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1605748138987" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1605744434183" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1605744544187" />
-    <state x="208" y="23" width="1024" height="832" key="SettingsEditor" timestamp="1605553326567">
-      <screen x="0" y="23" width="1440" height="831" />
+
     </state>
+    <state x="222" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605547605131" />
     <state x="208" y="23" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1605223540018" />
-    <state x="208" y="23" key="SettingsEditor/0.23.1440.831@0.23.1440.831" timestamp="1605553326567" />
-    <state x="208" y="23" width="1024" height="832" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1605549812881" />
-    <state x="509" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605748808946">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state x="509" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.829@0.23.1440.829" timestamp="1605748808946" />
-    <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.832@0.23.1440.832" timestamp="1605541118130" />
-    <state x="114" y="139" key="new project wizard" timestamp="1605542872262">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="114" y="139" key="new project wizard/0.23.1440.832@0.23.1440.832" timestamp="1605542872262" />
-    <state x="303" y="208" key="run.anything.popup" timestamp="1605663423653">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="303" y="208" key="run.anything.popup/0.23.1440.830@0.23.1440.830" timestamp="1605662911963" />
-    <state x="303" y="208" key="run.anything.popup/0.23.1440.832@0.23.1440.832" timestamp="1605663423653" />
-    <state x="385" y="179" width="670" height="676" key="search.everywhere.popup" timestamp="1605540877608">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="385" y="179" width="670" height="676" key="search.everywhere.popup/0.23.1440.832@0.23.1440.832" timestamp="1605540877608" />
+
   </component>
 </project>
