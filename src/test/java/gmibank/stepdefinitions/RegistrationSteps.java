@@ -151,7 +151,7 @@ public class RegistrationSteps {
 
     @Given("user leaves email as blank")
     public void user_leaves_email_as_blank() {
-        Driver.waitAndSendKeys(us002Pages.email, "Your email is required.", 2);
+        Driver.waitAndSendKeys(us002Pages.email, " ", 2);
         Assert.assertTrue(us002Pages.emailErrorMessage.getText().contains("required"));
 
 

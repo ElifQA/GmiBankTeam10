@@ -12,7 +12,6 @@
 
       @16tc01
       Scenario: user should have at least two accounts
-        And user click on Transfer Money link from dropdown
         And verify user have at least two accounts
 
         @16tc02
@@ -37,7 +36,30 @@
           And User can select a balance that they want to proceed with
           And User should provide a description for that transfer
           And User click on Make transfer button
-        Then user should see "TransferSuccessMessage" message
+        Then User should see success Message
 
+          @16tc06
+          Scenario: User leaves a field blank
+            And User leaves balance as blank
+            And User click on Make transfer button
+            Then User should see This field is required message
+
+          @16tc07
+            Scenario: User enters more than five digits
+              And User enters balance more than five digits
+              And User click on Make transfer button
+              Then User should see onlyFiveDigitMessage
+
+          @16tc08
+          Scenario: User enters letter
+            And User enters balance with letters
+            And User click on Make transfer button
+            Then User should see onlyNumberMessage
+
+          @16tc09
+          Scenario: User leaves a field blank
+            And User leaves description box as blank
+            And User click on Make transfer button
+            Then User should see This field is required message
 
 

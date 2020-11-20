@@ -14,21 +14,34 @@ public class MoneyTransferPage {
     @FindBy( xpath = "//a[contains(text(),'Transfer Money')]")
     public WebElement transferMoneyLink;
 
-    @FindBy(xpath = "//*[@id=\"fromAccountId\"]")
+    @FindBy(xpath = "//*[@id='fromAccountId']")
     public WebElement fromBox;
 
-    @FindBy(xpath = "//*[@id=\"toAccountId\"]")
+    @FindBy(xpath = "//*[@id='toAccountId']")
     public WebElement toBox;
 
-    @FindBy(xpath = "//*[@id=\"balance\"]")
+    @FindBy(id = "balance")
     public WebElement balanceBox;
 
     @FindBy(xpath = "//*[@id=\"balancecent\"]")
     public WebElement centBox;
 
-    @FindBy(xpath = "//*[@id=\"description\"]")
+    @FindBy(id = "description")
     public WebElement descriptionBox;
 
     @FindBy(id = "make-transfer")
     public WebElement transferButton;
+    @FindBy( xpath = "//*[contains(text(),'Transfer is succesfull')]")
+    public WebElement successMessage;
+
+    @FindBy (xpath = "//div[contains(text(),'This field is required.')]")
+    public WebElement balanceErrorMess;
+
+    @FindBy (xpath = "//div[contains(text(),'only numbers max 5 digits')]")
+    public WebElement OnlyNumbersErrMess;
+
+    @FindBy(xpath = "//div[contains(text(),'This field is required.')]")
+    public WebElement descriptionErrMess;
+
+
 }

@@ -6,7 +6,7 @@ import java.util.Properties;
 public class ConfigurationReader {
 
     static Properties properties;
-    static String path = "/Users/Betul/IdeaProjects/GmiBankTeam10/configuration.properties";
+    static String path = "C:\\Users\\MelekAsim\\IdeaProjects\\GmiFramework\\configuration.properties";
     static {
 
         try {

@@ -10,12 +10,12 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
-        features = "src\\test\\resources",
+        features = "C:\\Users\\MelekAsim\\IdeaProjects\\GmiFramework\\src\\test\\resources",
         glue = "gmibank/stepdefinitions",
-        tags = "@",
-        dryRun = true
+        tags = "@16tc08",
+        dryRun = false
 )
 
-public class Runner {
+public class ElifRunner {
 
 }
