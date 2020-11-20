@@ -40,6 +40,20 @@
         And users clicks on customer's Edit button
         Then edit the email and click Save button
 
+    @US_18TC08
+    Scenario: editing language
+      And users clicks on customer's Edit button
+      Then edit the language and click Save button
+
+    @US_18TC09
+    Scenario: editing role
+      And users clicks on customer's Edit button
+      Then edit the role and click Save button
+
+    @US_18TC010
+    Scenario: deleting customer
+      And users clicks on customer's Delete button
+      Then verify deleting message
 
 
 
