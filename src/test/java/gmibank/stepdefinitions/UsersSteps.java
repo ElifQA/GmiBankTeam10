@@ -1,14 +1,15 @@
 package gmibank.stepdefinitions;
 
 import gmibank.pages.LoginPage;
-import gmibank.pages.RegistrationPage;
 import gmibank.pages.UsersPage;
 import gmibank.utilities.ConfigurationReader;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class UsersSteps {
 
@@ -33,44 +34,100 @@ public class UsersSteps {
 
     @Then("verify a clickable View button is there")
     public void verify_a_clickable_View_button_is_there() {
-        Driver.scrollToElement(usersPage.page23);
-        Driver.waitAndClick(usersPage.page23,2);
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        Driver.scrollToElement(usersPage.viewButton);
         Driver.verifyElementDisplayed(usersPage.viewButton);
         Driver.scrollToElement(usersPage.viewButton);
     }
 
     @Then("verify a clickable Edit button")
     public void verify_a_clickable_Edit_button() {
-        Driver.scrollToElement(usersPage.page23);
-        Driver.waitAndClick(usersPage.page23,2);
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
         Driver.verifyElementDisplayed(usersPage.editButton);
         Driver.scrollToElement(usersPage.editButton);
     }
     @Given("users clicks on customer's Edit button")
     public void users_clicks_on_customer_s_Edit_button() {
-        Driver.scrollToElement(usersPage.page23);
-        Driver.waitAndClick(usersPage.page23,2);
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
         Driver.clickWithJS(usersPage.editButton);
     }
 
     @Then("edit the login name and clicks on Save button")
     public void edit_the_login_name_and_clicks_on_Save_button() {
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
         usersPage.loginTextbox.clear();
-        usersPage.loginTextbox.sendKeys("userpixie");
-        Driver.waitAndClick(usersPage.saveButton,2);
+        usersPage.loginTextbox.sendKeys("pixuser");
+        Driver.clickWithJS(usersPage.saveButton);
     }
     @Then("edit the first name and click on Save button")
     public void edit_the_first_name_and_click_on_Save_button() {
-
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        usersPage.loginTextbox.clear();
+        usersPage.firstNameTextbox.sendKeys("Pix");
+        Driver.waitAndClick(usersPage.saveButton,2);
     }
 
     @Then("edit the last name and click on Save button")
     public void edit_the_last_name_and_click_on_Save_button() {
-
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        usersPage.loginTextbox.clear();
+        usersPage.lastNameTextbox.sendKeys("Char");
+        Driver.waitAndClick(usersPage.saveButton,2);
     }
     @Then("edit the email and click Save button")
     public void edit_the_email_and_click_Save_button() {
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        usersPage.loginTextbox.clear();
+        usersPage.emailTextbox.sendKeys("picchar@gmail.com");
+        Driver.waitAndClick(usersPage.saveButton,2);
+    }
+    @Then("edit the language and click Save button")
+    public void edit_the_language_and_click_Save_button() {
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        Select select=new Select(usersPage.languageDropdown);
+//        List<WebElement> list= (List<WebElement>) select.getFirstSelectedOption();
+//        for (WebElement w:list){
+//            w.click();
+//            w.getText();
+//        }
+        Driver.waitAndClick(usersPage.saveButton,2);
+    }
+
+    @Then("edit the role and click Save button")
+    public void edit_the_role_and_click_Save_button() {
+        Driver.waitAndClick(usersPage.forwardButton,3);
+        Driver.waitAndClick(usersPage.page23,3);
+        Driver.waitAndClick(usersPage.page22,3);
+        Driver.waitAndClick(usersPage.role,3);
+        Driver.waitAndClick(usersPage.saveButton,2);
+    }
+
+    @Given("users clicks on customer's Delete button")
+    public void users_clicks_on_customer_s_Delete_button() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
+    @Then("verify deleting message")
+    public void verify_deleting_message() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 }

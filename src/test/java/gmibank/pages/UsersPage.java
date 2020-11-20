@@ -14,8 +14,14 @@ public class UsersPage {
     @FindBy(xpath = "//span[contains(text(),'First Name')]")
     public WebElement firstNameText;
 
+    @FindBy(xpath = "//a[contains(text(),'»»')]")
+    public WebElement forwardButton;
+
     @FindBy(xpath = "//a[contains(text(),'23')]")
     public WebElement page23;
+
+    @FindBy(xpath = "//a[contains(text(),'22')]")
+    public WebElement page22;
 
     @FindBy(xpath = "//tbody/tr[@id='userpixie']/td[10]/div[1]/a[1]")
     public WebElement viewButton;
@@ -43,6 +49,9 @@ public class UsersPage {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveButton;
+
+    @FindBy(xpath = "//option[@value='ROLE_USER']")
+    public WebElement role;
 
 
 }
