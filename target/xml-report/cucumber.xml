@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="4" tests="4" time="0.511">
-<testcase classname="Register Try To Change Password" name="TC008_user Try To Change his pasword Password" time="0.075">
-<skipped><![CDATA[Given I as a user navigate to GMI bank webPage..............................undefined
-And I as a user click to login sign.........................................undefined
-And I as a user choose signin from dropdown menu............................undefined
-When I as a user enter my UserName and Password in to opened frame..........undefined
-Then I click sign in button and sign in.....................................undefined
-And I click on My username..................................................undefined
-And I choose password from dropdown menu....................................undefined
-Then I enter my current password............................................undefined
-Then I enter valid password as new password.................................undefined
-Then I enter same valid pasword for confirmation............................undefined
-And I click save button.....................................................undefined
-Then I observe pop up as "Password changed!"................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Register Try To Change Password" name="invalid password and message validation" time="0.004">
-<skipped><![CDATA[When I enter "kadır" in New Password and confirmation box...................undefined
-Then I see "Password not changed!"..........................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Register Try To Change Password" name="invalid password and message validation 2" time="0.006">
-<skipped><![CDATA[When I enter "Kadir" in New Password and confirmation box...................undefined
-Then I see "Password not changed!"..........................................undefined
-]]></skipped>
-</testcase>
-<testcase classname="Register Try To Change Password" name="invalid password and message validation 3" time="0.003">
-<skipped><![CDATA[When I enter "Kadir123" in New Password and confirmation box................undefined
-Then I see "Password not changed!"..........................................undefined
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.395">
+<testcase classname="Test all customer`s data" name="Validate All Customer`s data" time="0.084">
+<skipped><![CDATA[Given user provides the api end point to set the response using "https://www.gmibank.com/api/tp-customers".undefined
+Given manuplate all customer`s data.........................................undefined
+And user sets the data in correspondent files...............................undefined
+Then user validate all data.................................................undefined
 ]]></skipped>
 </testcase>
 </testsuite>

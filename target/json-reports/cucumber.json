@@ -3,11 +3,29 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-15T18:37:21.101Z",
         "line": 4,
-        "name": "TC008_user Try To Change his pasword Password",
+        "name": "api end point is being set in response",
         "description": "",
-        "id": "register-try-to-change-password;tc008-user-try-to-change-his-pasword-password",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user provides the api end point to set the response using \"https://www.gmibank.com/api/tp-customers\"",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-22T15:38:27.275Z",
+        "line": 8,
+        "name": "Validate All Customer`s data",
+        "description": "",
+        "id": "test-all-customer`s-data;validate-all-customer`s-data",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -15,8 +33,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 5,
-            "name": "I as a user navigate to GMI bank webPage",
+            "line": 9,
+            "name": "manuplate all customer`s data",
             "match": {},
             "keyword": "Given "
           },
@@ -24,44 +42,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "I as a user click to login sign",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "I as a user choose signin from dropdown menu",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "I as a user enter my UserName and Password in to opened frame",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "I click sign in button and sign in",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
             "line": 10,
-            "name": "I click on My username",
+            "name": "user sets the data in correspondent files",
             "match": {},
             "keyword": "And "
           },
@@ -70,185 +52,29 @@
               "status": "undefined"
             },
             "line": 11,
-            "name": "I choose password from dropdown menu",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "I enter my current password",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "I enter valid password as new password",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "I enter same valid pasword for confirmation",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "I click save button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "I observe pop up as \"Password changed!\"",
+            "name": "user validate all data",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@us008tc001"
+            "name": "@AllCustomerData"
           },
           {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T18:37:21.193Z",
-        "line": 24,
-        "name": "invalid password and message validation",
-        "description": "",
-        "id": "register-try-to-change-password;invalid-password-and-message-validation;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "I enter \"kadır\" in New Password and confirmation box",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "I see \"Password not changed!\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@us008tc001"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T18:37:21.198Z",
-        "line": 25,
-        "name": "invalid password and message validation",
-        "description": "",
-        "id": "register-try-to-change-password;invalid-password-and-message-validation;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "I enter \"Kadir\" in New Password and confirmation box",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "I see \"Password not changed!\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@us008tc001"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T18:37:21.207Z",
-        "line": 26,
-        "name": "invalid password and message validation",
-        "description": "",
-        "id": "register-try-to-change-password;invalid-password-and-message-validation;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "I enter \"Kadir123\" in New Password and confirmation box",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "I see \"Password not changed!\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@us008tc001"
-          },
-          {
-            "name": "@smoke"
+            "name": "@customerDataTest"
           }
         ]
       }
     ],
-    "name": "Register Try To Change Password",
+    "name": "Test all customer`s data",
     "description": "",
-    "id": "register-try-to-change-password",
+    "id": "test-all-customer`s-data",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/us008_tc.feature",
+    "uri": "file:src/test/resources/features/CustomerApi.feature",
     "tags": [
       {
-        "name": "@us008tc001",
+        "name": "@AllCustomerData",
         "type": "Tag",
         "location": {
           "line": 1,

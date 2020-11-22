@@ -18,6 +18,7 @@ Feature: Register Try To Change Password
 @smoke
   Scenario Outline: invalid password and message validation
     When I enter "<Password>" in New Password and confirmation box
+    And I click save button
     Then I see "<ErrorMessage>"
 Examples:
   | Password |ErrorMessage             |

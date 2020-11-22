@@ -66,7 +66,7 @@ public class GmiPage {
     @FindBy(xpath ="//*[@id='currentPassword']")
     public WebElement curPass;
 
-    @FindBy(xpath "//*[@id='newPassword']")
+    @FindBy(xpath = "//*[@id='newPassword']")
     public WebElement newPass;
 
     @FindBy(xpath ="//*[@id='confirmPassword']")
