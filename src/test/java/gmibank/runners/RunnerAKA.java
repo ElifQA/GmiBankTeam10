@@ -1,22 +1,18 @@
 package gmibank.runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
-
-@CucumberOptions(strict = true,
-
+@CucumberOptions(
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
-        features = "C:/Users/kadir/IdeaProjects/GmiBankTeam10/src/test/resources",
-        glue = "gmibank/stepdefinitions",
-        tags = "@US_18TC09",
-        dryRun = false
+        features = "src/test/resources/features",
+        glue = "gmibank/stepdefinitions/",
+        tags = "@us001tc001",
+         dryRun = false
 )
+public class RunnerAKA {
 
-public class AkaRunner {
 }
