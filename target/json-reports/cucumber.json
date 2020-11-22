@@ -1,0 +1,174 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "New customer creation",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8085000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the page",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_is_on_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on user icon",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfoSegmentSteps.user_click_on_user_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on account menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.LoginSteps.user_click_on_account_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 423000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.CustomerManagmentSteps.user_click_on_sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 424000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 27
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CustomerManagmentSteps.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#register\\-submit\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mehmets-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:821:d881:4263:715f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/jq/c0gkl_r54_9...}, goog:chromeOptions: {debuggerAddress: localhost:63279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: c765aa0a45b15f9850033a417f6ce594\n*** Element info: {Using\u003did, value\u003dregister-submit}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\n\tat gmibank.stepdefinitions.RegistrationSteps.user_clicks_on_button(RegistrationSteps.java:83)\n\tat ✽.user clicks on \"SignInLink\" button(file:///Users/Betul/IdeaProjects/GmiBankTeam10/src/test/resources/features/CustomerManagment.feature:9)\n",
+              "duration": 10045000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user clicks on \"SignInLink\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SignInLink\"",
+                  "offset": 15
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationSteps.user_clicks_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user clicks on My Operations link",
+            "match": {
+              "location": "gmibank.stepdefinitions.CustomerManagmentSteps.user_clicks_on_My_Operations_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user clicks on Manage Customers link",
+            "match": {
+              "location": "gmibank.stepdefinitions.CustomerManagmentSteps.user_clicks_on_Manage_Customers_link()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T02:27:04.201Z",
+        "line": 14,
+        "name": "Create a New Customer",
+        "description": "",
+        "id": "customer-managment-address-creation;create-a-new-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user clicks on Create a new customer link",
+            "match": {
+              "location": "gmibank.stepdefinitions.CustomerManagmentSteps.user_clicks_on_Create_a_new_customer_link()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0010"
+          },
+          {
+            "name": "@TC01"
+          }
+        ]
+      }
+    ],
+    "name": "Customer Managment Address Creation",
+    "description": "",
+    "id": "customer-managment-address-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CustomerManagment.feature",
+    "tags": [
+      {
+        "name": "@US0010",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
