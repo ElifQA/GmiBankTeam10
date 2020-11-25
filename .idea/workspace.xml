@@ -14,20 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639fe8f3-6874-422d-9d9c-4d9ff3333e7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gmibank/runners/ElifRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/pages/MoneyTransferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/pages/MoneyTransferPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/MoneyTransferSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/MoneyTransferSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/RegistrationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/stepdefinitions/RegistrationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gmibank/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gmibank/utilities/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MoneyTransfer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gmibank/stepdefinitions/RegistrationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gmibank/stepdefinitions/RegistrationSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +29,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
