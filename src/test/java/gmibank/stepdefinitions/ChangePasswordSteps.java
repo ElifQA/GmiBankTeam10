@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 public class ChangePasswordSteps {
     GmiPage gmiPage = new GmiPage();
 
-    @Given("I as a user navigate to GMI bank webPage")
+  //  @Given("I as a user navigate to GMI bank webPage")
     public void i_as_a_user_navigate_to_GMI_bank_webPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));    }
 
